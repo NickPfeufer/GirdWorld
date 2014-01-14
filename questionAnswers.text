@@ -1,0 +1,44 @@
+1 no, if it can not move foward it will turn one half cardinal direction to the right
+2 foward
+3 turn a half of a degree to the right
+4 a flower
+5 if it is facing an edge it turns, otherwise it moves
+6 it turns
+7 no
+8 each turn it decays until it turns almost black
+9 no, it just blocks things
+10 a bug and a flower can share a space, a rock can not share
+
+1   0  - North
+	45 - North East
+	90 - East
+	135- South East
+	180- South
+	225- South West
+	270- West
+	315- North West
+	360- North
+
+2 you can move it to any location on the grid, moving it outside leads to errors
+
+3 setColor
+
+4 it disapeared
+
+set 2 -----------------------------------------------------------------------
+
+1 the variable sidelength determins how many steps an unopstructed bug takes before it turns.
+
+2 the variable steps keeps track of the bugs progress along a side
+
+3 turn goes by 45 degrees so a 90 degrees turn is needed
+
+4 boxbug extends bug so it gains all of bug's methods, move being one of those
+
+5 no, it never changes, in the code it is constant and there is no getters or setters
+
+6 yes if it encounters another actor
+
+7 when it turns
+
+
