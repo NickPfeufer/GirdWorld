@@ -51,4 +51,9 @@ class Zbug extends Bug {
                 side++;
             }
     }
+    // three difrences from Josh Sparks
+    // 1) I used my seperate moveLine function to draw the diagonal
+    // 2) all my movement is determined by if statements, his goes 
+    // in order called from the builder
+    // 3) I use a boolean z to determin if z was run
 }

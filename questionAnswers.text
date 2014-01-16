@@ -41,4 +41,34 @@ set 2 -----------------------------------------------------------------------
 
 7 when it turns
 
+------------------------------exersizes
+
+5 I would initilize a new box bug variable, maybe set its color then add it to the world. ie:
+
+		BoxBug bot = new BoxBug(6);
+        bot.setColor(Color.ORANGE);
+        world.add(bot);
+
+set 3------------------------------------------------------------------------
+ 1 loc1.getRow();
+ 2 false;
+ 3 loc3 == (4,4);
+ 4 135
+ 5 it gets passed the direction of the location
+ 
+
+ ----------------------------------------------------------------------------
+ Group Activity Nick P and Josh S
+ 1 a we'll have it turn if its a rock and jump if its a flower
+   b we'll have it turn
+   c we'll have it turn
+   d we'll have it turn
+   e they  will fight to the death
+   f how far it jumps before it turns if unobstructed
+ 2 a bug
+   b bug, in the sense it is a bug
+   c yes, number of jumps
+   d Act()
+
+
 
