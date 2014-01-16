@@ -13,8 +13,8 @@ class Jumper extends Bug {
 	}
 
 	public void jump(){
-		Location current = getLocation();
-		newLocation nextLocation = current.adjacentLocation(getDirection());
+		Location current = super.getLocation();
+		Location nextLocation = current.adjacentLocation(getDirection());
 		Location afterNext = nextLocation.adjacentLocation(getDirection());
 
 		if(canJump(afterNext)){
@@ -22,6 +22,12 @@ class Jumper extends Bug {
 		}else{
 			turn();
 		}	
+	}
+	public boolean canJump(Location xy){
+		if (xy.isValid()) {
+			
+		}
+		return false;
 	}
 
 	public void act(){
