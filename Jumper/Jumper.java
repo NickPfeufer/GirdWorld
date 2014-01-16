@@ -25,7 +25,11 @@ class Jumper extends Bug {
 	}
 	public boolean canJump(Location xy){
 		if (xy.isValid()) {
-			
+			if (get(xy) != null) {
+				return false;
+			}else{
+				return true;
+			}
 		}
 		return false;
 	}
