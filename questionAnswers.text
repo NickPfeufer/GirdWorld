@@ -55,20 +55,62 @@ set 3------------------------------------------------------------------------
  3 loc3 == (4,4);
  4 135
  5 it gets passed the direction of the location
- 
-
- ----------------------------------------------------------------------------
+set 4------------------------------------------------------------------------
+ 1 for loop through all locations in grid and check for contents
+ 2 isValid(10, 10)
+ 3 in the documentation
+ 4 no, it's not as flexable
+ set 5-----------------------------------------------------------------------
+ 1 color, location, direction
+ 2 north, blue
+ 3  so that the program could run through an array list (singular) rather than several array lists.
+ 4 no, an error ocurs
+ 5 setdirection(direction + 90);
+set 6-----------------------------------------------------------------------
+1 if (getGrid == false){ return}
+2 return (neighbor == null || neighbor instanceof Flower);
+3 getGrid() to know what grid it works with isValid() check if a location is valid and .get() to check actors
+4 .getAdjacentLocation find whats ahead of you
+5 getLocation - know where the actor is
+6 the bug turns
+7 no Loc is used for the location of the flower
+8 When the flower is droped it is set to have the same color as the bug
+9 yes
+10 Flower flower = new Flower(getColor());
+flower.putSelfInGrid(gr, loc);
+11 4
+ ---------------------------------------------------------------------------
  Group Activity Nick P and Josh S
  1 a we'll have it turn if its a rock and jump if its a flower
    b we'll have it turn
    c we'll have it turn
    d we'll have it turn
-   e they  will fight to the death
+   e they  will turn
    f how far it jumps before it turns if unobstructed
  2 a bug
    b bug, in the sense it is a bug
    c yes, number of jumps
    d Act()
+   e Jump() - check landing spot and jump if safe turn if not
+   f building a JumperRunner, and forcing the bug into all situations possible and ensuring it works
+   test:
+   	  -jump in difrent directions
+   	  -jump over something
+      -jump into a rock
+      -jump into a flower
+      -jump off grid
+      -jump at edge of grid
+      -jump into another actor
+      -jump into another jumper
+      -not leaving flowers when it moves
+set 7-----------------------------------------------------------------------
+1 getActors() processActors() getMoveLocation() selectMoveLocation() makeMove()
+2 they check for other actors and process them in some way
+3 only if they need a difrent set of actors than the 8 spaces around them
+4 remove them from the grid, move them, change their color, change its own color
+5 getMoveLocation() all valid locations selectMoveLocation() choose from available locations makeMove() move to choosen location
+6 it extends actor and actor has constructors in it
+
 
 
 
