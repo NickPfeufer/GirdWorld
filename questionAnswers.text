@@ -110,6 +110,21 @@ set 7-----------------------------------------------------------------------
 4 remove them from the grid, move them, change their color, change its own color
 5 getMoveLocation() all valid locations selectMoveLocation() choose from available locations makeMove() move to choosen location
 6 it extends actor and actor has constructors in it
+set 8-----------------------------------------------------------------------
+1 it overides functions that act calls
+2 because it uses that method when it moves, and adds to it
+3 add a new flower in its old location after it makes a move in the function makeMove
+4 it does not need to change the method, it uses the exact same code
+5 actor
+6 It calls a getGrid function
+set 9 ----------------------------------------------------------------------
+1 it uses the method as it is in the critter class so it does not need to overide it
+2 it gets the three tiles in front of it and for all three of them it checks if they are empty, a rock or another criter, if all of those return false in a tile it removes the actor there 
+3 so that it gets the three tiles infront of it
+4 (2,5), (3,5), (4,5)
+5 a crabcritter moves left or right and if it can't it turns 90 degrees
+6 if both tiles next to it are filled
+7 because crabs are critters, and the process actors function in critter ignores critters
 
 
 
