@@ -12,11 +12,11 @@ class BlusterCritter extends Critter {
 
 	public ArrayList<Actor> getActors(){
 		ArrayList<Actor> actors = new ArrayList<Actor>();
-		Location bob = getLocation();
+		Location blusterLocation = getLocation();
 		ArrayList<Location> locations = new ArrayList<Location>();
 
-		int x = bob.getRow() + 2;
-		int y = bob.getCol() + 2;
+		int x = blusterLocation.getRow() + 2;
+		int y = blusterLocation.getCol() + 2;
 		int tempX;
 		int tempy;
 
